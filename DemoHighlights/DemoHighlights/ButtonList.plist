@@ -8,7 +8,7 @@
 		<key>Image</key>
 		<string>index_shiti</string>
 		<key>title</key>
-		<string>查试题</string>
+		<string>人脸识别</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -16,7 +16,7 @@
 		<key>Image</key>
 		<string>index_yingyong</string>
 		<key>title</key>
-		<string>应用汇</string>
+		<string>行人检测</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -24,7 +24,7 @@
 		<key>Image</key>
 		<string>index_pvideo</string>
 		<key>title</key>
-		<string>微视频</string>
+		<string>图像处理</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -32,7 +32,7 @@
 		<key>Image</key>
 		<string>index_xunlian</string>
 		<key>title</key>
-		<string>做训练</string>
+		<string>目标跟踪</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -40,7 +40,7 @@
 		<key>Image</key>
 		<string>index_shijuan</string>
 		<key>title</key>
-		<string>看试卷</string>
+		<string>手势识别</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -48,7 +48,7 @@
 		<key>Image</key>
 		<string>index_discussion</string>
 		<key>title</key>
-		<string>爱问答</string>
+		<string>物体识别</string>
 	</dict>
 </array>
 </plist>

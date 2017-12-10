@@ -8,16 +8,15 @@
 
 #import "CLRotationView.h"
 #import "CLCustomRotationGestureRecognizer.h"
+
 @interface CLRotationView ()
-// 按钮数组
-@property (nonatomic , strong) NSMutableArray *btnArray;
 
-@property (nonatomic , assign) CGFloat rotationAngleInRadians; // 旋转的弧度
-
-// 按钮的名字
-@property (nonatomic , strong) NSMutableArray *nameArray ;
+@property (nonatomic , strong) NSMutableArray *btnArray;// 按钮数组
+@property (nonatomic , assign) CGFloat rotationAngleInRadians;// 旋转的弧度
+@property (nonatomic , strong) NSMutableArray *nameArray;// 按钮的名字
 
 @end
+
 @implementation CLRotationView
 
 static CLRotationView *shareInstance;
@@ -29,7 +28,7 @@ static CLRotationView *shareInstance;
         self.layer.masksToBounds = YES;
         self.layer.cornerRadius = self.frame.size.width / 2 ;
         self.Width = self.frame.size.width;
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor blueColor];
         // 按钮和按钮标题数组
         _btnArray = [NSMutableArray new];
         _nameArray = [NSMutableArray new];
@@ -39,10 +38,8 @@ static CLRotationView *shareInstance;
     return self;
 }
 
-
-
-
-- (void)BtnType:(CL_RoundviewType)type BtnWidth:(CGFloat)BtnWidth  adjustsFontSizesTowidth:(BOOL)sizeWith  masksToBounds:(BOOL)mask conrenrRadius:(CGFloat)radius image:(NSMutableArray *)image TitileArray:(NSMutableArray *)titileArray titileColor:(UIColor *)titleColor {
+- (void)BtnType:(CL_RoundviewType)type BtnWidth:(CGFloat)BtnWidth  adjustsFontSizesTowidth:(BOOL)sizeWith  masksToBounds:(BOOL)mask conrenrRadius:(CGFloat)radius image:(NSMutableArray *)image TitileArray:(NSMutableArray *)titileArray titileColor:(UIColor *)titleColor
+{
     CGFloat corner = -M_PI * 2.0 / titileArray.count;
     // 半径为 （转盘半径➖按钮半径）的一半
     CGFloat r = (self.Width  - BtnWidth) / 2 ;
@@ -71,21 +68,17 @@ static CLRotationView *shareInstance;
             [btn addSubview:imageview];
             
             UILabel *label = [[UILabel alloc]init ];
-            label.frame = CGRectMake(  imageview.center.x - (BtnWidth - 20)*0.5, CGRectGetMaxY(imageview.frame), BtnWidth - 20 , 20);
-            
+            label.frame = CGRectMake(  imageview.center.x - (BtnWidth - 20)*0.5, CGRectGetMaxY(imageview.frame), BtnWidth - 30 , 20);
             label.text = titileArray[i];
             // 设置字体颜色为白色
             label.textColor = [UIColor whiteColor];
             label.textAlignment = NSTextAlignmentCenter;
-            
             label.font = [UIFont systemFontOfSize:11];
             // label根据字体自适应label大小，居中对齐
             label.adjustsFontSizeToFitWidth = YES;
             label.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
-            
             label.tag = i;
             [btn addSubview:label];
-            
         }else {
             [btn setTitle:titileArray[i] forState:UIControlStateNormal];
             [btn setTitleColor:titleColor forState:UIControlStateNormal];
@@ -94,27 +87,23 @@ static CLRotationView *shareInstance;
         [btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
         [_btnArray addObject:btn];
-        
     }
 }
 
 #pragma mark - 点击按钮时跳转控制器
-- (void)btn: (UIButton *)btn {
-
+- (void)btn: (UIButton *)btn
+{
     NSInteger num1 = btn.tag;
     NSString *name = _nameArray[num1];
     self.back(num1,name);
-    
 }
 
 #pragma mark -通过旋转手势转动转盘
-- (void)changeMove:(CLCustomRotationGestureRecognizer *)retation {
-
-    
+- (void)changeMove:(CLCustomRotationGestureRecognizer *)retation
+{
     switch (retation.state) {
         case UIGestureRecognizerStateBegan:
             break;
-            
         case UIGestureRecognizerStateChanged:
         {
             self.rotationAngleInRadians += retation.rotation;
@@ -125,55 +114,41 @@ static CLRotationView *shareInstance;
                     btn.transform = CGAffineTransformMakeRotation(-(self.rotationAngleInRadians+retation.rotation));
                 }
             }];
-            
             break;
         }
-            
-//        case UIGestureRecognizerStateFailed:
-//        case UIGestureRecognizerStateCancelled:
+            //        case UIGestureRecognizerStateFailed:
+            //        case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateEnded:
         {
             int num = self.rotationAngleInRadians/(M_PI/3);
             int last = ((int)(self.rotationAngleInRadians*(180/M_PI)))%(60);
-            
-            
-                    if (abs(last)>=30) {
-                        
-                        [UIView animateWithDuration:.25 animations:^{
-                            
-                            self.transform = CGAffineTransformMakeRotation(M_PI/3*(last>0?(num+1):(num-1)));
-                            //                        tempAngle = M_PI/3*(last>0?(num+1):(num-1));
-                            for (UIButton *btn in _btnArray) {
-                                btn.transform = CGAffineTransformMakeRotation(-(M_PI/3*(last>0?(num+1):(num-1))));
-                            }
-                        }];
-                        //偏转角度保存。
-                        self.rotationAngleInRadians = M_PI/3*(last>0?(num+1):(num-1));
-                        NSLog(@"偏转角度 = %lf ", self.rotationAngleInRadians*(180/M_PI));
-                        
-            }
-                    else{
-                        
-                        [UIView animateWithDuration:.25 animations:^{
-                            
-                            self.transform = CGAffineTransformMakeRotation(M_PI/3*num);
-                            for (UIButton *btn in _btnArray) {
-                                btn.transform = CGAffineTransformMakeRotation(-(M_PI/3*num));
-                            }
+            if (abs(last)>=30) {
+                [UIView animateWithDuration:.25 animations:^{
+                    
+                    self.transform = CGAffineTransformMakeRotation(M_PI/3*(last>0?(num+1):(num-1)));
+                    //                        tempAngle = M_PI/3*(last>0?(num+1):(num-1));
+                    for (UIButton *btn in _btnArray) {
+                        btn.transform = CGAffineTransformMakeRotation(-(M_PI/3*(last>0?(num+1):(num-1))));
+                    }
                 }];
                 //偏转角度保存。
-                    self.rotationAngleInRadians = M_PI/3*num;
-
+                self.rotationAngleInRadians = M_PI/3*(last>0?(num+1):(num-1));
+                NSLog(@"偏转角度 = %lf ", self.rotationAngleInRadians*(180/M_PI));
+            }else{
+                [UIView animateWithDuration:.25 animations:^{
+                    self.transform = CGAffineTransformMakeRotation(M_PI/3*num);
+                    for (UIButton *btn in _btnArray) {
+                        btn.transform = CGAffineTransformMakeRotation(-(M_PI/3*num));
+                    }
+                }];
+                //偏转角度保存。
+                self.rotationAngleInRadians = M_PI/3*num;
             }
-    
             break;
         }
         default:
             break;
     }
-    
-   
 }
-
 
 @end
