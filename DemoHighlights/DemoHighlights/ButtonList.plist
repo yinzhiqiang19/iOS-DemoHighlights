@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>FaceRecognitionHomeViewController</string>
 		<key>Image</key>
 		<string>index_shiti</string>
 		<key>title</key>
@@ -12,7 +12,7 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>PedestrianDetectionViewController</string>
 		<key>Image</key>
 		<string>index_yingyong</string>
 		<key>title</key>
@@ -20,7 +20,7 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>ImageProcessingViewController</string>
 		<key>Image</key>
 		<string>index_pvideo</string>
 		<key>title</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>TargetTrackingViewController</string>
 		<key>Image</key>
 		<string>index_xunlian</string>
 		<key>title</key>
@@ -36,7 +36,7 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>GestureRecognitionViewController</string>
 		<key>Image</key>
 		<string>index_shijuan</string>
 		<key>title</key>
@@ -44,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>CLOneViewController</string>
+		<string>ObjectRecognitionViewController</string>
 		<key>Image</key>
 		<string>index_discussion</string>
 		<key>title</key>

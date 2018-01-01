@@ -28,7 +28,7 @@ static CLRotationView *shareInstance;
         self.layer.masksToBounds = YES;
         self.layer.cornerRadius = self.frame.size.width / 2 ;
         self.Width = self.frame.size.width;
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:135.0/255.0 blue:37.0/255.0 alpha:1.0];
         // 按钮和按钮标题数组
         _btnArray = [NSMutableArray new];
         _nameArray = [NSMutableArray new];

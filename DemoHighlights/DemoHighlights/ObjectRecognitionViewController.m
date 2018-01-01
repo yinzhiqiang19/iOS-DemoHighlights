@@ -1,22 +1,22 @@
 //
-//  NewsViewController.m
-//  CustomTarBar
-//
-//  Created by yinzhiqiang on 2017/11/18.
+//  ObjectRecognitionViewController.m
+//  DemoHighlights
+//  物体识别
+//  Created by yinzhiqiang on 2017/12/16.
 //  Copyright © 2017年 yinzhiqiang. All rights reserved.
 //
 
-#import "NewsViewController.h"
+#import "ObjectRecognitionViewController.h"
 
-@interface NewsViewController ()
+@interface ObjectRecognitionViewController ()
 
 @end
 
-@implementation NewsViewController
+@implementation ObjectRecognitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

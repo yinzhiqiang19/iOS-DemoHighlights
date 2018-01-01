@@ -9,6 +9,6 @@
 #import "QKBasicViewController.h"
 #import "CLOneViewController.h"
 
-@interface HomeViewController : QKBasicViewController
+@interface HomeViewController : UIViewController
 
 @end

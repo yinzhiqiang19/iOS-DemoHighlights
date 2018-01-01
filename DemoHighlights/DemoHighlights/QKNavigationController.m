@@ -22,8 +22,8 @@
 
 + (void)initialize
 {
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:153.0/255.0 green:93.0/255.0 blue:176.0/255.0 alpha:1]];
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:153.0/255.0 green:93.0/255.0 blue:176.0/255.0 alpha:1]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:255.0/255.0 green:70.0/255.0 blue:40.0/255.0 alpha:1]];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:255.0/255.0 green:70.0/255.0 blue:40.0/255.0 alpha:1]];
     //修改标题字体颜色及大小
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }

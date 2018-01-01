@@ -8,9 +8,6 @@
 
 #import "QKTabBarController.h"
 #import "HomeViewController.h"
-#import "OrderViewController.h"
-#import "NewsViewController.h"
-#import "MeViewController.h"
 #import "QKNavigationController.h"
 #import "QKTabBar.h"
 
@@ -24,9 +21,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupChildVc:[[HomeViewController alloc] init] title:@"首页" image:@"tabBar_home" selectedImage:@"tabBar_home_click" isHiddenNavgationBar:NO];
-    [self setupChildVc:[[OrderViewController alloc] init] title:@"订单" image:@"tabBar_find" selectedImage:@"tabBar_find_click" isHiddenNavgationBar:NO];
-    [self setupChildVc:[[NewsViewController alloc] init] title:@"资讯" image:@"tabBar_find" selectedImage:@"tabBar_find_click" isHiddenNavgationBar:NO];
-    [self setupChildVc:[[MeViewController alloc] init] title:@"我的" image:@"tabBar_me" selectedImage:@"tabBar_me_click" isHiddenNavgationBar:NO];
+//    [self setupChildVc:[[OrderViewController alloc] init] title:@"订单" image:@"tabBar_find" selectedImage:@"tabBar_find_click" isHiddenNavgationBar:NO];
+//    [self setupChildVc:[[MeViewController alloc] init] title:@"我的" image:@"tabBar_me" selectedImage:@"tabBar_me_click" isHiddenNavgationBar:NO];
     
     [[UITabBar appearance] setBackgroundImage:[self imageWithColor:[UIColor whiteColor]]];
     //  设置tabbar
@@ -98,7 +94,7 @@
     //设置选中了的TabBarItem的字体颜色、大小
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
     selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:153.0/255.0 green:93.0/255.0 blue:176.0/255.0 alpha:1];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:255.0/255.0 green:70.0/255.0 blue:40.0/255.0 alpha:1];
     
     UITabBarItem *item = [UITabBarItem appearance];
     

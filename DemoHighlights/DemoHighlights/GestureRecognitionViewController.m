@@ -1,22 +1,22 @@
 //
-//  OrderViewController.m
-//  CustomTarBar
-//
-//  Created by yinzhiqiang on 2017/11/18.
+//  GestureRecognitionViewController.m
+//  DemoHighlights
+//  手势识别
+//  Created by yinzhiqiang on 2017/12/16.
 //  Copyright © 2017年 yinzhiqiang. All rights reserved.
 //
 
-#import "OrderViewController.h"
+#import "GestureRecognitionViewController.h"
 
-@interface OrderViewController ()
+@interface GestureRecognitionViewController ()
 
 @end
 
-@implementation OrderViewController
+@implementation GestureRecognitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0822671FF9AB73005B364F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822661FF9AB73005B364F /* BaseViewController.m */; };
+		3C0822761FFA40E3005B364F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822741FFA40E3005B364F /* SettingViewController.m */; };
+		3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822751FFA40E3005B364F /* SettingViewController.xib */; };
+		3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */; };
+		3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */; };
+		3C0822801FFA88DC005B364F /* FaceDetectionVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */; };
+		3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C08227F1FFA88DC005B364F /* FaceDetectionVideoViewController.xib */; };
+		3C0822851FFA88EF005B364F /* FaceTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822831FFA88EF005B364F /* FaceTrackingViewController.m */; };
+		3C0822861FFA88EF005B364F /* FaceTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822841FFA88EF005B364F /* FaceTrackingViewController.xib */; };
+		3C08228A1FFA8919005B364F /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822881FFA8919005B364F /* FaceRecognitionViewController.m */; };
+		3C08228B1FFA8919005B364F /* FaceRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822891FFA8919005B364F /* FaceRecognitionViewController.xib */; };
+		3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */; };
+		3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */; };
+		3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */; };
+		3C494D791FE50F3300C2AD86 /* PedestrianDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D771FE50F3300C2AD86 /* PedestrianDetectionViewController.xib */; };
+		3C494D7D1FE50FC200C2AD86 /* ObjectRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D7B1FE50FC200C2AD86 /* ObjectRecognitionViewController.m */; };
+		3C494D7E1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D7C1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib */; };
+		3C494D821FE5101300C2AD86 /* GestureRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D801FE5101300C2AD86 /* GestureRecognitionViewController.m */; };
+		3C494D831FE5101300C2AD86 /* GestureRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D811FE5101300C2AD86 /* GestureRecognitionViewController.xib */; };
+		3C494D871FE5104C00C2AD86 /* TargetTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D851FE5104C00C2AD86 /* TargetTrackingViewController.m */; };
+		3C494D881FE5104C00C2AD86 /* TargetTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D861FE5104C00C2AD86 /* TargetTrackingViewController.xib */; };
+		3C494D8C1FE5109500C2AD86 /* ImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D8A1FE5109500C2AD86 /* ImageProcessingViewController.m */; };
+		3C494D8D1FE5109500C2AD86 /* ImageProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D8B1FE5109500C2AD86 /* ImageProcessingViewController.xib */; };
 		3C5EF6041FD592AD00C2DF5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6031FD592AD00C2DF5F /* main.m */; };
 		3C5EF6071FD592AD00C2DF5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6061FD592AD00C2DF5F /* AppDelegate.m */; };
 		3C5EF60D1FD592AD00C2DF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF60B1FD592AD00C2DF5F /* Main.storyboard */; };
@@ -15,12 +38,6 @@
 		3C5EF61D1FD592AE00C2DF5F /* DemoHighlightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF61C1FD592AE00C2DF5F /* DemoHighlightsTests.m */; };
 		3C5EF6281FD592AE00C2DF5F /* DemoHighlightsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6271FD592AE00C2DF5F /* DemoHighlightsUITests.m */; };
 		3C5EF6491FD5944700C2DF5F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6361FD5944700C2DF5F /* HomeViewController.m */; };
-		3C5EF64A1FD5944700C2DF5F /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6381FD5944700C2DF5F /* MeViewController.m */; };
-		3C5EF64B1FD5944700C2DF5F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF63A1FD5944700C2DF5F /* NewsViewController.m */; };
-		3C5EF64D1FD5944700C2DF5F /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF63E1FD5944700C2DF5F /* OrderViewController.m */; };
-		3C5EF6561FD595E100C2DF5F /* common in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF6531FD595E100C2DF5F /* common */; };
-		3C5EF6581FD595E100C2DF5F /* utility in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF6551FD595E100C2DF5F /* utility */; };
-		3C5EF65A1FD596D000C2DF5F /* module in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF6591FD596D000C2DF5F /* module */; };
 		3C5EF6751FD598B700C2DF5F /* QKBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF66C1FD598B700C2DF5F /* QKBasicViewController.m */; };
 		3C5EF6761FD598B700C2DF5F /* QKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF66E1FD598B700C2DF5F /* QKNavigationController.m */; };
 		3C5EF6771FD598B700C2DF5F /* QKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6701FD598B700C2DF5F /* QKTabBar.m */; };
@@ -29,8 +46,10 @@
 		3C5EF6801FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF67B1FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.m */; };
 		3C5EF6811FD59ADB00C2DF5F /* CLOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF67D1FD59ADB00C2DF5F /* CLOneViewController.m */; };
 		3C5EF6821FD59ADB00C2DF5F /* CLRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF67F1FD59ADB00C2DF5F /* CLRotationView.m */; };
-		3C5EF6851FD59B0A00C2DF5F /* buttonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6841FD59B0A00C2DF5F /* buttonModel.m */; };
+		3C5EF6851FD59B0A00C2DF5F /* ButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EF6841FD59B0A00C2DF5F /* ButtonModel.m */; };
 		3C5EF6871FD59B8D00C2DF5F /* ButtonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF6861FD59B8D00C2DF5F /* ButtonList.plist */; };
+		3CD3EE8F1FFAFC7C0072A68E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3EE8D1FFAFC7C0072A68E /* AboutViewController.m */; };
+		3CD3EE901FFAFC7C0072A68E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3EE8E1FFAFC7C0072A68E /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +70,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C0822651FF9AB73005B364F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3C0822661FF9AB73005B364F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3C0822731FFA40E3005B364F /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		3C0822741FFA40E3005B364F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		3C0822751FFA40E3005B364F /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		3C0822781FFA88CB005B364F /* FaceDetectionPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionPictureViewController.h; sourceTree = "<group>"; };
+		3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionPictureViewController.m; sourceTree = "<group>"; };
+		3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectionPictureViewController.xib; sourceTree = "<group>"; };
+		3C08227D1FFA88DC005B364F /* FaceDetectionVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionVideoViewController.h; sourceTree = "<group>"; };
+		3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionVideoViewController.m; sourceTree = "<group>"; };
+		3C08227F1FFA88DC005B364F /* FaceDetectionVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectionVideoViewController.xib; sourceTree = "<group>"; };
+		3C0822821FFA88EF005B364F /* FaceTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTrackingViewController.h; sourceTree = "<group>"; };
+		3C0822831FFA88EF005B364F /* FaceTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTrackingViewController.m; sourceTree = "<group>"; };
+		3C0822841FFA88EF005B364F /* FaceTrackingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceTrackingViewController.xib; sourceTree = "<group>"; };
+		3C0822871FFA8919005B364F /* FaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionViewController.h; sourceTree = "<group>"; };
+		3C0822881FFA8919005B364F /* FaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionViewController.m; sourceTree = "<group>"; };
+		3C0822891FFA8919005B364F /* FaceRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionHomeViewController.h; sourceTree = "<group>"; };
+		3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionHomeViewController.m; sourceTree = "<group>"; };
+		3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionHomeViewController.xib; sourceTree = "<group>"; };
+		3C494D751FE50F3300C2AD86 /* PedestrianDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedestrianDetectionViewController.h; sourceTree = "<group>"; };
+		3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedestrianDetectionViewController.m; sourceTree = "<group>"; };
+		3C494D771FE50F3300C2AD86 /* PedestrianDetectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PedestrianDetectionViewController.xib; sourceTree = "<group>"; };
+		3C494D7A1FE50FC200C2AD86 /* ObjectRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectRecognitionViewController.h; sourceTree = "<group>"; };
+		3C494D7B1FE50FC200C2AD86 /* ObjectRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectRecognitionViewController.m; sourceTree = "<group>"; };
+		3C494D7C1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjectRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C494D7F1FE5101300C2AD86 /* GestureRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognitionViewController.h; sourceTree = "<group>"; };
+		3C494D801FE5101300C2AD86 /* GestureRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognitionViewController.m; sourceTree = "<group>"; };
+		3C494D811FE5101300C2AD86 /* GestureRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C494D841FE5104C00C2AD86 /* TargetTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetTrackingViewController.h; sourceTree = "<group>"; };
+		3C494D851FE5104C00C2AD86 /* TargetTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetTrackingViewController.m; sourceTree = "<group>"; };
+		3C494D861FE5104C00C2AD86 /* TargetTrackingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TargetTrackingViewController.xib; sourceTree = "<group>"; };
+		3C494D891FE5109500C2AD86 /* ImageProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessingViewController.h; sourceTree = "<group>"; };
+		3C494D8A1FE5109500C2AD86 /* ImageProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcessingViewController.m; sourceTree = "<group>"; };
+		3C494D8B1FE5109500C2AD86 /* ImageProcessingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageProcessingViewController.xib; sourceTree = "<group>"; };
 		3C5EF5FF1FD592AD00C2DF5F /* DemoHighlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHighlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5EF6031FD592AD00C2DF5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C5EF6051FD592AD00C2DF5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,15 +121,6 @@
 		3C5EF6291FD592AE00C2DF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C5EF6351FD5944700C2DF5F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3C5EF6361FD5944700C2DF5F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		3C5EF6371FD5944700C2DF5F /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		3C5EF6381FD5944700C2DF5F /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		3C5EF6391FD5944700C2DF5F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		3C5EF63A1FD5944700C2DF5F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		3C5EF63D1FD5944700C2DF5F /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
-		3C5EF63E1FD5944700C2DF5F /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		3C5EF6531FD595E100C2DF5F /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = common; sourceTree = "<group>"; };
-		3C5EF6551FD595E100C2DF5F /* utility */ = {isa = PBXFileReference; lastKnownFileType = folder; path = utility; sourceTree = "<group>"; };
-		3C5EF6591FD596D000C2DF5F /* module */ = {isa = PBXFileReference; lastKnownFileType = folder; path = module; sourceTree = "<group>"; };
 		3C5EF66B1FD598B700C2DF5F /* QKBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBasicViewController.h; sourceTree = "<group>"; };
 		3C5EF66C1FD598B700C2DF5F /* QKBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBasicViewController.m; sourceTree = "<group>"; };
 		3C5EF66D1FD598B700C2DF5F /* QKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKNavigationController.h; sourceTree = "<group>"; };
@@ -92,9 +137,12 @@
 		3C5EF67D1FD59ADB00C2DF5F /* CLOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOneViewController.m; sourceTree = "<group>"; };
 		3C5EF67E1FD59ADB00C2DF5F /* CLRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRotationView.h; sourceTree = "<group>"; };
 		3C5EF67F1FD59ADB00C2DF5F /* CLRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRotationView.m; sourceTree = "<group>"; };
-		3C5EF6831FD59B0A00C2DF5F /* buttonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonModel.h; sourceTree = "<group>"; };
-		3C5EF6841FD59B0A00C2DF5F /* buttonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonModel.m; sourceTree = "<group>"; };
+		3C5EF6831FD59B0A00C2DF5F /* ButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonModel.h; sourceTree = "<group>"; };
+		3C5EF6841FD59B0A00C2DF5F /* ButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonModel.m; sourceTree = "<group>"; };
 		3C5EF6861FD59B8D00C2DF5F /* ButtonList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ButtonList.plist; sourceTree = "<group>"; };
+		3CD3EE8C1FFAFC7C0072A68E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3CD3EE8D1FFAFC7C0072A68E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		3CD3EE8E1FFAFC7C0072A68E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +170,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0822681FF9ABD7005B364F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3C08226A1FF9ADE6005B364F /* customeTab */,
+				3C0822691FF9ADB2005B364F /* circleMenu */,
+				3C0822651FF9AB73005B364F /* BaseViewController.h */,
+				3C0822661FF9AB73005B364F /* BaseViewController.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		3C0822691FF9ADB2005B364F /* circleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3C5EF6831FD59B0A00C2DF5F /* ButtonModel.h */,
+				3C5EF6841FD59B0A00C2DF5F /* ButtonModel.m */,
+				3C5EF6861FD59B8D00C2DF5F /* ButtonList.plist */,
+				3C5EF67A1FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.h */,
+				3C5EF67B1FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.m */,
+				3C5EF67C1FD59ADB00C2DF5F /* CLOneViewController.h */,
+				3C5EF67D1FD59ADB00C2DF5F /* CLOneViewController.m */,
+				3C5EF67E1FD59ADB00C2DF5F /* CLRotationView.h */,
+				3C5EF67F1FD59ADB00C2DF5F /* CLRotationView.m */,
+			);
+			name = circleMenu;
+			sourceTree = "<group>";
+		};
+		3C08226A1FF9ADE6005B364F /* customeTab */ = {
+			isa = PBXGroup;
+			children = (
+				3C5EF66B1FD598B700C2DF5F /* QKBasicViewController.h */,
+				3C5EF66C1FD598B700C2DF5F /* QKBasicViewController.m */,
+				3C5EF66D1FD598B700C2DF5F /* QKNavigationController.h */,
+				3C5EF66E1FD598B700C2DF5F /* QKNavigationController.m */,
+				3C5EF66F1FD598B700C2DF5F /* QKTabBar.h */,
+				3C5EF6701FD598B700C2DF5F /* QKTabBar.m */,
+				3C5EF6711FD598B700C2DF5F /* QKTabBarController.h */,
+				3C5EF6721FD598B700C2DF5F /* QKTabBarController.m */,
+				3C5EF6731FD598B700C2DF5F /* UIView+QKExtension.h */,
+				3C5EF6741FD598B700C2DF5F /* UIView+QKExtension.m */,
+			);
+			name = customeTab;
+			sourceTree = "<group>";
+		};
+		3C08226B1FF9AE37005B364F /* module */ = {
+			isa = PBXGroup;
+			children = (
+				3C08226D1FFA1F77005B364F /* facerecognition */,
+				3C08226E1FFA1F8A005B364F /* PedestrianDetection */,
+				3C08226F1FFA1F9B005B364F /* ImageProcessing */,
+				3C0822701FFA1FB2005B364F /* ObjectRecognition */,
+				3C0822711FFA1FD4005B364F /* GestureReconition */,
+				3C0822721FFA1FE6005B364F /* TargetTracking */,
+				3CD3EE8B1FFAFC340072A68E /* settingabout */,
+			);
+			name = module;
+			sourceTree = "<group>";
+		};
+		3C08226D1FFA1F77005B364F /* facerecognition */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */,
+				3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */,
+				3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */,
+				3C0822781FFA88CB005B364F /* FaceDetectionPictureViewController.h */,
+				3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */,
+				3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */,
+				3C08227D1FFA88DC005B364F /* FaceDetectionVideoViewController.h */,
+				3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */,
+				3C08227F1FFA88DC005B364F /* FaceDetectionVideoViewController.xib */,
+				3C0822821FFA88EF005B364F /* FaceTrackingViewController.h */,
+				3C0822831FFA88EF005B364F /* FaceTrackingViewController.m */,
+				3C0822841FFA88EF005B364F /* FaceTrackingViewController.xib */,
+				3C0822871FFA8919005B364F /* FaceRecognitionViewController.h */,
+				3C0822881FFA8919005B364F /* FaceRecognitionViewController.m */,
+				3C0822891FFA8919005B364F /* FaceRecognitionViewController.xib */,
+			);
+			name = facerecognition;
+			sourceTree = "<group>";
+		};
+		3C08226E1FFA1F8A005B364F /* PedestrianDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D751FE50F3300C2AD86 /* PedestrianDetectionViewController.h */,
+				3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */,
+				3C494D771FE50F3300C2AD86 /* PedestrianDetectionViewController.xib */,
+			);
+			name = PedestrianDetection;
+			sourceTree = "<group>";
+		};
+		3C08226F1FFA1F9B005B364F /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D891FE5109500C2AD86 /* ImageProcessingViewController.h */,
+				3C494D8A1FE5109500C2AD86 /* ImageProcessingViewController.m */,
+				3C494D8B1FE5109500C2AD86 /* ImageProcessingViewController.xib */,
+			);
+			name = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		3C0822701FFA1FB2005B364F /* ObjectRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D7A1FE50FC200C2AD86 /* ObjectRecognitionViewController.h */,
+				3C494D7B1FE50FC200C2AD86 /* ObjectRecognitionViewController.m */,
+				3C494D7C1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib */,
+			);
+			name = ObjectRecognition;
+			sourceTree = "<group>";
+		};
+		3C0822711FFA1FD4005B364F /* GestureReconition */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D7F1FE5101300C2AD86 /* GestureRecognitionViewController.h */,
+				3C494D801FE5101300C2AD86 /* GestureRecognitionViewController.m */,
+				3C494D811FE5101300C2AD86 /* GestureRecognitionViewController.xib */,
+			);
+			name = GestureReconition;
+			sourceTree = "<group>";
+		};
+		3C0822721FFA1FE6005B364F /* TargetTracking */ = {
+			isa = PBXGroup;
+			children = (
+				3C494D841FE5104C00C2AD86 /* TargetTrackingViewController.h */,
+				3C494D851FE5104C00C2AD86 /* TargetTrackingViewController.m */,
+				3C494D861FE5104C00C2AD86 /* TargetTrackingViewController.xib */,
+			);
+			name = TargetTracking;
+			sourceTree = "<group>";
+		};
 		3C5EF5F61FD592AD00C2DF5F = {
 			isa = PBXGroup;
 			children = (
@@ -145,36 +323,12 @@
 		3C5EF6011FD592AD00C2DF5F /* DemoHighlights */ = {
 			isa = PBXGroup;
 			children = (
-				3C5EF6861FD59B8D00C2DF5F /* ButtonList.plist */,
-				3C5EF6831FD59B0A00C2DF5F /* buttonModel.h */,
-				3C5EF6841FD59B0A00C2DF5F /* buttonModel.m */,
-				3C5EF67A1FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.h */,
-				3C5EF67B1FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.m */,
-				3C5EF67C1FD59ADB00C2DF5F /* CLOneViewController.h */,
-				3C5EF67D1FD59ADB00C2DF5F /* CLOneViewController.m */,
-				3C5EF67E1FD59ADB00C2DF5F /* CLRotationView.h */,
-				3C5EF67F1FD59ADB00C2DF5F /* CLRotationView.m */,
-				3C5EF66B1FD598B700C2DF5F /* QKBasicViewController.h */,
-				3C5EF66C1FD598B700C2DF5F /* QKBasicViewController.m */,
-				3C5EF66D1FD598B700C2DF5F /* QKNavigationController.h */,
-				3C5EF66E1FD598B700C2DF5F /* QKNavigationController.m */,
-				3C5EF66F1FD598B700C2DF5F /* QKTabBar.h */,
-				3C5EF6701FD598B700C2DF5F /* QKTabBar.m */,
-				3C5EF6711FD598B700C2DF5F /* QKTabBarController.h */,
-				3C5EF6721FD598B700C2DF5F /* QKTabBarController.m */,
-				3C5EF6731FD598B700C2DF5F /* UIView+QKExtension.h */,
-				3C5EF6741FD598B700C2DF5F /* UIView+QKExtension.m */,
-				3C5EF6591FD596D000C2DF5F /* module */,
-				3C5EF6531FD595E100C2DF5F /* common */,
-				3C5EF6551FD595E100C2DF5F /* utility */,
+				3C5EF6051FD592AD00C2DF5F /* AppDelegate.h */,
+				3C5EF6061FD592AD00C2DF5F /* AppDelegate.m */,
 				3C5EF6351FD5944700C2DF5F /* HomeViewController.h */,
 				3C5EF6361FD5944700C2DF5F /* HomeViewController.m */,
-				3C5EF63D1FD5944700C2DF5F /* OrderViewController.h */,
-				3C5EF63E1FD5944700C2DF5F /* OrderViewController.m */,
-				3C5EF6391FD5944700C2DF5F /* NewsViewController.h */,
-				3C5EF63A1FD5944700C2DF5F /* NewsViewController.m */,
-				3C5EF6371FD5944700C2DF5F /* MeViewController.h */,
-				3C5EF6381FD5944700C2DF5F /* MeViewController.m */,
+				3C08226B1FF9AE37005B364F /* module */,
+				3C0822681FF9ABD7005B364F /* common */,
 				3C5EF6021FD592AD00C2DF5F /* Supporting Files */,
 			);
 			path = DemoHighlights;
@@ -183,8 +337,6 @@
 		3C5EF6021FD592AD00C2DF5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C5EF6051FD592AD00C2DF5F /* AppDelegate.h */,
-				3C5EF6061FD592AD00C2DF5F /* AppDelegate.m */,
 				3C5EF60B1FD592AD00C2DF5F /* Main.storyboard */,
 				3C5EF60E1FD592AD00C2DF5F /* Assets.xcassets */,
 				3C5EF6101FD592AD00C2DF5F /* LaunchScreen.storyboard */,
@@ -210,6 +362,19 @@
 				3C5EF6291FD592AE00C2DF5F /* Info.plist */,
 			);
 			path = DemoHighlightsUITests;
+			sourceTree = "<group>";
+		};
+		3CD3EE8B1FFAFC340072A68E /* settingabout */ = {
+			isa = PBXGroup;
+			children = (
+				3C0822731FFA40E3005B364F /* SettingViewController.h */,
+				3C0822741FFA40E3005B364F /* SettingViewController.m */,
+				3C0822751FFA40E3005B364F /* SettingViewController.xib */,
+				3CD3EE8C1FFAFC7C0072A68E /* AboutViewController.h */,
+				3CD3EE8D1FFAFC7C0072A68E /* AboutViewController.m */,
+				3CD3EE8E1FFAFC7C0072A68E /* AboutViewController.xib */,
+			);
+			name = settingabout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,13 +486,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0822861FFA88EF005B364F /* FaceTrackingViewController.xib in Resources */,
 				3C5EF6121FD592AD00C2DF5F /* LaunchScreen.storyboard in Resources */,
+				3CD3EE901FFAFC7C0072A68E /* AboutViewController.xib in Resources */,
+				3C08228B1FFA8919005B364F /* FaceRecognitionViewController.xib in Resources */,
 				3C5EF60F1FD592AD00C2DF5F /* Assets.xcassets in Resources */,
-				3C5EF65A1FD596D000C2DF5F /* module in Resources */,
+				3C494D8D1FE5109500C2AD86 /* ImageProcessingViewController.xib in Resources */,
+				3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */,
+				3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */,
+				3C494D7E1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib in Resources */,
+				3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */,
 				3C5EF6871FD59B8D00C2DF5F /* ButtonList.plist in Resources */,
-				3C5EF6581FD595E100C2DF5F /* utility in Resources */,
 				3C5EF60D1FD592AD00C2DF5F /* Main.storyboard in Resources */,
-				3C5EF6561FD595E100C2DF5F /* common in Resources */,
+				3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */,
+				3C494D881FE5104C00C2AD86 /* TargetTrackingViewController.xib in Resources */,
+				3C494D831FE5101300C2AD86 /* GestureRecognitionViewController.xib in Resources */,
+				3C494D791FE50F3300C2AD86 /* PedestrianDetectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,19 +528,29 @@
 			files = (
 				3C5EF6071FD592AD00C2DF5F /* AppDelegate.m in Sources */,
 				3C5EF6041FD592AD00C2DF5F /* main.m in Sources */,
-				3C5EF64D1FD5944700C2DF5F /* OrderViewController.m in Sources */,
+				3C0822851FFA88EF005B364F /* FaceTrackingViewController.m in Sources */,
 				3C5EF6801FD59ADB00C2DF5F /* CLCustomRotationGestureRecognizer.m in Sources */,
 				3C5EF6781FD598B700C2DF5F /* QKTabBarController.m in Sources */,
+				3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */,
+				3C494D871FE5104C00C2AD86 /* TargetTrackingViewController.m in Sources */,
 				3C5EF6811FD59ADB00C2DF5F /* CLOneViewController.m in Sources */,
 				3C5EF6761FD598B700C2DF5F /* QKNavigationController.m in Sources */,
+				3C08228A1FFA8919005B364F /* FaceRecognitionViewController.m in Sources */,
+				3C0822761FFA40E3005B364F /* SettingViewController.m in Sources */,
+				3CD3EE8F1FFAFC7C0072A68E /* AboutViewController.m in Sources */,
 				3C5EF6771FD598B700C2DF5F /* QKTabBar.m in Sources */,
 				3C5EF6791FD598B700C2DF5F /* UIView+QKExtension.m in Sources */,
 				3C5EF6751FD598B700C2DF5F /* QKBasicViewController.m in Sources */,
-				3C5EF64B1FD5944700C2DF5F /* NewsViewController.m in Sources */,
+				3C0822801FFA88DC005B364F /* FaceDetectionVideoViewController.m in Sources */,
+				3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.m in Sources */,
+				3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */,
+				3C0822671FF9AB73005B364F /* BaseViewController.m in Sources */,
 				3C5EF6821FD59ADB00C2DF5F /* CLRotationView.m in Sources */,
 				3C5EF6491FD5944700C2DF5F /* HomeViewController.m in Sources */,
-				3C5EF6851FD59B0A00C2DF5F /* buttonModel.m in Sources */,
-				3C5EF64A1FD5944700C2DF5F /* MeViewController.m in Sources */,
+				3C494D821FE5101300C2AD86 /* GestureRecognitionViewController.m in Sources */,
+				3C5EF6851FD59B0A00C2DF5F /* ButtonModel.m in Sources */,
+				3C494D7D1FE50FC200C2AD86 /* ObjectRecognitionViewController.m in Sources */,
+				3C494D8C1FE5109500C2AD86 /* ImageProcessingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -505,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

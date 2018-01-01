@@ -1,5 +1,5 @@
 //
-//  buttonModel.h
+//  ButtonModel.h
 //  菁优网首页动画
 //
 //  Created by JackChen on 2016/12/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface buttonModel : NSObject
+@interface ButtonModel : NSObject
 
 @property (nonatomic,copy) NSString *className;
 
