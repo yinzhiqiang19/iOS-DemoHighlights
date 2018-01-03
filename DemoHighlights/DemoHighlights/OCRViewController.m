@@ -1,23 +1,22 @@
 //
-//  FaceRecognitionViewController.m
+//  OCRViewController.m
 //  DemoHighlights
-//  人脸识别
-//  Created by yinzhiqiang on 2017/12/16.
-//  Copyright © 2017年 yinzhiqiang. All rights reserved.
+//  OCR识别
+//  Created by yinzhiqiang on 2018/1/3.
+//  Copyright © 2018年 yinzhiqiang. All rights reserved.
 //
 
-#import "FaceRecognitionHomeViewController.h"
-#import "FaceDetectionPictureViewController.h"
-#import "FaceDetectionVideoViewController.h"
-#import "FaceTrackingViewController.h"
-#import "FaceRecognitionViewController.h"
 #import "OCRViewController.h"
+#import "IDCardRecognitionViewController.h"
+#import "BankCardRecognitionViewController.h"
+#import "DriveLicenseRecognitionViewController.h"
+#import "DriveCardRecognitionViewController.h"
 
 #define MAINLABEL_TAG 1
 #define SECONDLABEL_TAG 2
 #define PHOTO_TAG 3
 
-@interface FaceRecognitionHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface OCRViewController ()
 {
     NSArray *titleArray;
     NSArray *titleDetailArray;
@@ -28,15 +27,15 @@
 
 @end
 
-@implementation FaceRecognitionHomeViewController
+@implementation OCRViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    titleArray = [[NSArray alloc] initWithObjects:@"人脸检测-照片",@"人脸检测-视频",@"人脸跟踪",@"人脸识别",@"OCR", nil];
-    titleDetailArray = [[NSArray alloc] initWithObjects:@"从照片中检测出人脸位置，并用矩形框标记",@"从视频中检测出人脸位置，并用矩形框标记",@"实时跟踪人脸位置，并用矩形框标记",@"人脸识别",@"身份证、银行卡、行驶证、驾驶证识别", nil];
-    imageArray = [[NSArray alloc] initWithObjects:@"face_detection_icon",@"face_detection_icon",@"face_detection_icon",@"face_detection_icon",@"face_detection_icon", nil];
+    titleArray = [[NSArray alloc] initWithObjects:@"身份证识别",@"银行卡识别",@"行驶证识别",@"驾驶证识别", nil];
+    titleDetailArray = [[NSArray alloc] initWithObjects:@"识别身份证中的信息",@"识别银行卡的信息",@"识别行驶证中的信息",@"识别驾驶证中的信息", nil];
+    imageArray = [[NSArray alloc] initWithObjects:@"face_detection_icon",@"face_detection_icon",@"face_detection_icon",@"face_detection_icon", nil];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,7 +81,7 @@
     
     mainLabel.text = [titleArray objectAtIndex:indexPath.row];
     secondLabel.text = [titleDetailArray objectAtIndex:indexPath.row];
-//    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg"];
+    //    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg"];
     
     photo.image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];//theImage;
     
@@ -102,25 +101,21 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        FaceDetectionPictureViewController *picture = [[FaceDetectionPictureViewController alloc] init];
+        IDCardRecognitionViewController *picture = [[IDCardRecognitionViewController alloc] init];
         picture.title = [titleArray objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:picture animated:YES];
     }else if(indexPath.row == 1){
-        FaceDetectionVideoViewController *video = [[FaceDetectionVideoViewController alloc] init];
+        BankCardRecognitionViewController *video = [[BankCardRecognitionViewController alloc] init];
         video.title = [titleArray objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:video animated:YES];
     }else if(indexPath.row == 2){
-        FaceTrackingViewController *tracking = [[FaceTrackingViewController alloc] init];
+        DriveLicenseRecognitionViewController *tracking = [[DriveLicenseRecognitionViewController alloc] init];
         tracking.title = [titleArray objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:tracking animated:YES];
     }else if(indexPath.row == 3){
-        FaceRecognitionViewController *detail = [[FaceRecognitionViewController alloc] init];
+        DriveCardRecognitionViewController *detail = [[DriveCardRecognitionViewController alloc] init];
         detail.title = [titleArray objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:detail animated:YES];
-    }else{
-        OCRViewController *ocr = [[OCRViewController alloc] init];
-        ocr.title = [titleArray objectAtIndex:indexPath.row];
-        [self.navigationController pushViewController:ocr animated:YES];
     }
 }
 

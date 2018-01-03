@@ -18,6 +18,16 @@
 		3C0822861FFA88EF005B364F /* FaceTrackingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822841FFA88EF005B364F /* FaceTrackingViewController.xib */; };
 		3C08228A1FFA8919005B364F /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822881FFA8919005B364F /* FaceRecognitionViewController.m */; };
 		3C08228B1FFA8919005B364F /* FaceRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822891FFA8919005B364F /* FaceRecognitionViewController.xib */; };
+		3C0CEE5D1FFC5C2500980E69 /* OCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE5B1FFC5C2500980E69 /* OCRViewController.m */; };
+		3C0CEE5E1FFC5C2500980E69 /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE5C1FFC5C2500980E69 /* OCRViewController.xib */; };
+		3C0CEE621FFC5D7800980E69 /* IDCardRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE601FFC5D7800980E69 /* IDCardRecognitionViewController.m */; };
+		3C0CEE631FFC5D7800980E69 /* IDCardRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE611FFC5D7800980E69 /* IDCardRecognitionViewController.xib */; };
+		3C0CEE671FFC5DAE00980E69 /* BankCardRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE651FFC5DAE00980E69 /* BankCardRecognitionViewController.m */; };
+		3C0CEE681FFC5DAE00980E69 /* BankCardRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE661FFC5DAE00980E69 /* BankCardRecognitionViewController.xib */; };
+		3C0CEE6C1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE6A1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m */; };
+		3C0CEE6D1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE6B1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib */; };
+		3C0CEE711FFC5E0300980E69 /* DriveCardRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE6F1FFC5E0300980E69 /* DriveCardRecognitionViewController.m */; };
+		3C0CEE721FFC5E0300980E69 /* DriveCardRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE701FFC5E0300980E69 /* DriveCardRecognitionViewController.xib */; };
 		3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */; };
 		3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */; };
 		3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */; };
@@ -87,6 +97,21 @@
 		3C0822871FFA8919005B364F /* FaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionViewController.h; sourceTree = "<group>"; };
 		3C0822881FFA8919005B364F /* FaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionViewController.m; sourceTree = "<group>"; };
 		3C0822891FFA8919005B364F /* FaceRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C0CEE5A1FFC5C2500980E69 /* OCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCRViewController.h; sourceTree = "<group>"; };
+		3C0CEE5B1FFC5C2500980E69 /* OCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCRViewController.m; sourceTree = "<group>"; };
+		3C0CEE5C1FFC5C2500980E69 /* OCRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCRViewController.xib; sourceTree = "<group>"; };
+		3C0CEE5F1FFC5D7800980E69 /* IDCardRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardRecognitionViewController.h; sourceTree = "<group>"; };
+		3C0CEE601FFC5D7800980E69 /* IDCardRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardRecognitionViewController.m; sourceTree = "<group>"; };
+		3C0CEE611FFC5D7800980E69 /* IDCardRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDCardRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C0CEE641FFC5DAE00980E69 /* BankCardRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardRecognitionViewController.h; sourceTree = "<group>"; };
+		3C0CEE651FFC5DAE00980E69 /* BankCardRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardRecognitionViewController.m; sourceTree = "<group>"; };
+		3C0CEE661FFC5DAE00980E69 /* BankCardRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C0CEE691FFC5DE000980E69 /* DriveLicenseRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveLicenseRecognitionViewController.h; sourceTree = "<group>"; };
+		3C0CEE6A1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveLicenseRecognitionViewController.m; sourceTree = "<group>"; };
+		3C0CEE6B1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DriveLicenseRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C0CEE6E1FFC5E0300980E69 /* DriveCardRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveCardRecognitionViewController.h; sourceTree = "<group>"; };
+		3C0CEE6F1FFC5E0300980E69 /* DriveCardRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveCardRecognitionViewController.m; sourceTree = "<group>"; };
+		3C0CEE701FFC5E0300980E69 /* DriveCardRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DriveCardRecognitionViewController.xib; sourceTree = "<group>"; };
 		3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionHomeViewController.h; sourceTree = "<group>"; };
 		3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionHomeViewController.m; sourceTree = "<group>"; };
 		3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionHomeViewController.xib; sourceTree = "<group>"; };
@@ -231,6 +256,7 @@
 		3C08226D1FFA1F77005B364F /* facerecognition */ = {
 			isa = PBXGroup;
 			children = (
+				3C0CEE591FFC5BD700980E69 /* OCR */,
 				3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */,
 				3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */,
 				3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */,
@@ -298,6 +324,28 @@
 				3C494D861FE5104C00C2AD86 /* TargetTrackingViewController.xib */,
 			);
 			name = TargetTracking;
+			sourceTree = "<group>";
+		};
+		3C0CEE591FFC5BD700980E69 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				3C0CEE5A1FFC5C2500980E69 /* OCRViewController.h */,
+				3C0CEE5B1FFC5C2500980E69 /* OCRViewController.m */,
+				3C0CEE5C1FFC5C2500980E69 /* OCRViewController.xib */,
+				3C0CEE5F1FFC5D7800980E69 /* IDCardRecognitionViewController.h */,
+				3C0CEE601FFC5D7800980E69 /* IDCardRecognitionViewController.m */,
+				3C0CEE611FFC5D7800980E69 /* IDCardRecognitionViewController.xib */,
+				3C0CEE641FFC5DAE00980E69 /* BankCardRecognitionViewController.h */,
+				3C0CEE651FFC5DAE00980E69 /* BankCardRecognitionViewController.m */,
+				3C0CEE661FFC5DAE00980E69 /* BankCardRecognitionViewController.xib */,
+				3C0CEE691FFC5DE000980E69 /* DriveLicenseRecognitionViewController.h */,
+				3C0CEE6A1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m */,
+				3C0CEE6B1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib */,
+				3C0CEE6E1FFC5E0300980E69 /* DriveCardRecognitionViewController.h */,
+				3C0CEE6F1FFC5E0300980E69 /* DriveCardRecognitionViewController.m */,
+				3C0CEE701FFC5E0300980E69 /* DriveCardRecognitionViewController.xib */,
+			);
+			name = OCR;
 			sourceTree = "<group>";
 		};
 		3C5EF5F61FD592AD00C2DF5F = {
@@ -489,17 +537,22 @@
 				3C0822861FFA88EF005B364F /* FaceTrackingViewController.xib in Resources */,
 				3C5EF6121FD592AD00C2DF5F /* LaunchScreen.storyboard in Resources */,
 				3CD3EE901FFAFC7C0072A68E /* AboutViewController.xib in Resources */,
+				3C0CEE6D1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib in Resources */,
 				3C08228B1FFA8919005B364F /* FaceRecognitionViewController.xib in Resources */,
 				3C5EF60F1FD592AD00C2DF5F /* Assets.xcassets in Resources */,
 				3C494D8D1FE5109500C2AD86 /* ImageProcessingViewController.xib in Resources */,
 				3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */,
 				3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */,
 				3C494D7E1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib in Resources */,
+				3C0CEE681FFC5DAE00980E69 /* BankCardRecognitionViewController.xib in Resources */,
 				3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */,
+				3C0CEE5E1FFC5C2500980E69 /* OCRViewController.xib in Resources */,
+				3C0CEE631FFC5D7800980E69 /* IDCardRecognitionViewController.xib in Resources */,
 				3C5EF6871FD59B8D00C2DF5F /* ButtonList.plist in Resources */,
 				3C5EF60D1FD592AD00C2DF5F /* Main.storyboard in Resources */,
 				3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */,
 				3C494D881FE5104C00C2AD86 /* TargetTrackingViewController.xib in Resources */,
+				3C0CEE721FFC5E0300980E69 /* DriveCardRecognitionViewController.xib in Resources */,
 				3C494D831FE5101300C2AD86 /* GestureRecognitionViewController.xib in Resources */,
 				3C494D791FE50F3300C2AD86 /* PedestrianDetectionViewController.xib in Resources */,
 			);
@@ -538,15 +591,20 @@
 				3C08228A1FFA8919005B364F /* FaceRecognitionViewController.m in Sources */,
 				3C0822761FFA40E3005B364F /* SettingViewController.m in Sources */,
 				3CD3EE8F1FFAFC7C0072A68E /* AboutViewController.m in Sources */,
+				3C0CEE671FFC5DAE00980E69 /* BankCardRecognitionViewController.m in Sources */,
 				3C5EF6771FD598B700C2DF5F /* QKTabBar.m in Sources */,
 				3C5EF6791FD598B700C2DF5F /* UIView+QKExtension.m in Sources */,
 				3C5EF6751FD598B700C2DF5F /* QKBasicViewController.m in Sources */,
 				3C0822801FFA88DC005B364F /* FaceDetectionVideoViewController.m in Sources */,
+				3C0CEE6C1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m in Sources */,
 				3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.m in Sources */,
 				3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */,
+				3C0CEE621FFC5D7800980E69 /* IDCardRecognitionViewController.m in Sources */,
 				3C0822671FF9AB73005B364F /* BaseViewController.m in Sources */,
 				3C5EF6821FD59ADB00C2DF5F /* CLRotationView.m in Sources */,
 				3C5EF6491FD5944700C2DF5F /* HomeViewController.m in Sources */,
+				3C0CEE5D1FFC5C2500980E69 /* OCRViewController.m in Sources */,
+				3C0CEE711FFC5E0300980E69 /* DriveCardRecognitionViewController.m in Sources */,
 				3C494D821FE5101300C2AD86 /* GestureRecognitionViewController.m in Sources */,
 				3C5EF6851FD59B0A00C2DF5F /* ButtonModel.m in Sources */,
 				3C494D7D1FE50FC200C2AD86 /* ObjectRecognitionViewController.m in Sources */,
