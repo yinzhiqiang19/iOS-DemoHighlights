@@ -60,6 +60,8 @@
 		3C5EF6871FD59B8D00C2DF5F /* ButtonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C5EF6861FD59B8D00C2DF5F /* ButtonList.plist */; };
 		3CD3EE8F1FFAFC7C0072A68E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3EE8D1FFAFC7C0072A68E /* AboutViewController.m */; };
 		3CD3EE901FFAFC7C0072A68E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3EE8E1FFAFC7C0072A68E /* AboutViewController.xib */; };
+		3CEBE76B1FFDAA8E00BCFFEA /* DemoHighlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBE7691FFDAA8E00BCFFEA /* DemoHighlightViewController.m */; };
+		3CEBE76C1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEBE76A1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,9 @@
 		3CD3EE8C1FFAFC7C0072A68E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		3CD3EE8D1FFAFC7C0072A68E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		3CD3EE8E1FFAFC7C0072A68E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		3CEBE7681FFDAA8E00BCFFEA /* DemoHighlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHighlightViewController.h; sourceTree = "<group>"; };
+		3CEBE7691FFDAA8E00BCFFEA /* DemoHighlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHighlightViewController.m; sourceTree = "<group>"; };
+		3CEBE76A1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoHighlightViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +254,7 @@
 				3C0822711FFA1FD4005B364F /* GestureReconition */,
 				3C0822721FFA1FE6005B364F /* TargetTracking */,
 				3CD3EE8B1FFAFC340072A68E /* settingabout */,
+				3CEBE7671FFDAA3100BCFFEA /* DemoHighlight */,
 			);
 			name = module;
 			sourceTree = "<group>";
@@ -425,6 +431,16 @@
 			name = settingabout;
 			sourceTree = "<group>";
 		};
+		3CEBE7671FFDAA3100BCFFEA /* DemoHighlight */ = {
+			isa = PBXGroup;
+			children = (
+				3CEBE7681FFDAA8E00BCFFEA /* DemoHighlightViewController.h */,
+				3CEBE7691FFDAA8E00BCFFEA /* DemoHighlightViewController.m */,
+				3CEBE76A1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib */,
+			);
+			name = DemoHighlight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -544,6 +560,7 @@
 				3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */,
 				3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */,
 				3C494D7E1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib in Resources */,
+				3CEBE76C1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib in Resources */,
 				3C0CEE681FFC5DAE00980E69 /* BankCardRecognitionViewController.xib in Resources */,
 				3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */,
 				3C0CEE5E1FFC5C2500980E69 /* OCRViewController.xib in Resources */,
@@ -587,6 +604,7 @@
 				3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */,
 				3C494D871FE5104C00C2AD86 /* TargetTrackingViewController.m in Sources */,
 				3C5EF6811FD59ADB00C2DF5F /* CLOneViewController.m in Sources */,
+				3CEBE76B1FFDAA8E00BCFFEA /* DemoHighlightViewController.m in Sources */,
 				3C5EF6761FD598B700C2DF5F /* QKNavigationController.m in Sources */,
 				3C08228A1FFA8919005B364F /* FaceRecognitionViewController.m in Sources */,
 				3C0822761FFA40E3005B364F /* SettingViewController.m in Sources */,

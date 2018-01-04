@@ -12,6 +12,7 @@
 #import "CLRotationView.h"
 #import "CLOneViewController.h"
 #import "SettingViewController.h"
+#import "DemoHighlightViewController.h"
 
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -123,7 +124,7 @@
 
 - (void)showItems:(UIButton *)sender
 {
-    CLOneViewController *vc = [[CLOneViewController alloc]init];
+    DemoHighlightViewController *vc = [[DemoHighlightViewController alloc]init];
     for (UILabel *label in sender.subviews) {
         if ( [label isKindOfClass:[UILabel class]]  &&  label.text  ) {
             // 根据按钮的标题给控制器的title赋值
@@ -133,9 +134,7 @@
             vc.title =  @"视觉";
         }
     }
-    
-        [self.navigationController pushViewController:vc animated:YES];
-//    [self.navigationController presentViewController:vc animated:YES completion:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 // 跳转界面
