@@ -10,7 +10,7 @@
 		3C0822671FF9AB73005B364F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822661FF9AB73005B364F /* BaseViewController.m */; };
 		3C0822761FFA40E3005B364F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822741FFA40E3005B364F /* SettingViewController.m */; };
 		3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0822751FFA40E3005B364F /* SettingViewController.xib */; };
-		3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */; };
+		3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.mm */; };
 		3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */; };
 		3C0822801FFA88DC005B364F /* FaceDetectionVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */; };
 		3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C08227F1FFA88DC005B364F /* FaceDetectionVideoViewController.xib */; };
@@ -28,6 +28,10 @@
 		3C0CEE6D1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE6B1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.xib */; };
 		3C0CEE711FFC5E0300980E69 /* DriveCardRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CEE6F1FFC5E0300980E69 /* DriveCardRecognitionViewController.m */; };
 		3C0CEE721FFC5E0300980E69 /* DriveCardRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0CEE701FFC5E0300980E69 /* DriveCardRecognitionViewController.xib */; };
+		3C1F602E20003F2C00EBFBEE /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F602D20003F2C00EBFBEE /* opencv2.framework */; };
+		3C1F603020003FD500EBFBEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F602F20003FD500EBFBEE /* UIKit.framework */; };
+		3C1F603220003FDD00EBFBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F603120003FDD00EBFBEE /* Foundation.framework */; };
+		3C1F603420003FE500EBFBEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F603320003FE400EBFBEE /* CoreGraphics.framework */; };
 		3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */; };
 		3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */; };
 		3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */; };
@@ -88,7 +92,7 @@
 		3C0822741FFA40E3005B364F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		3C0822751FFA40E3005B364F /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		3C0822781FFA88CB005B364F /* FaceDetectionPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionPictureViewController.h; sourceTree = "<group>"; };
-		3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionPictureViewController.m; sourceTree = "<group>"; };
+		3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectionPictureViewController.mm; sourceTree = "<group>"; };
 		3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectionPictureViewController.xib; sourceTree = "<group>"; };
 		3C08227D1FFA88DC005B364F /* FaceDetectionVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionVideoViewController.h; sourceTree = "<group>"; };
 		3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionVideoViewController.m; sourceTree = "<group>"; };
@@ -114,6 +118,10 @@
 		3C0CEE6E1FFC5E0300980E69 /* DriveCardRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveCardRecognitionViewController.h; sourceTree = "<group>"; };
 		3C0CEE6F1FFC5E0300980E69 /* DriveCardRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveCardRecognitionViewController.m; sourceTree = "<group>"; };
 		3C0CEE701FFC5E0300980E69 /* DriveCardRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DriveCardRecognitionViewController.xib; sourceTree = "<group>"; };
+		3C1F602D20003F2C00EBFBEE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = DemoHighlights/opencv2.framework; sourceTree = "<group>"; };
+		3C1F602F20003FD500EBFBEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C1F603120003FDD00EBFBEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C1F603320003FE400EBFBEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionHomeViewController.h; sourceTree = "<group>"; };
 		3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionHomeViewController.m; sourceTree = "<group>"; };
 		3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionHomeViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +188,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1F603420003FE500EBFBEE /* CoreGraphics.framework in Frameworks */,
+				3C1F603220003FDD00EBFBEE /* Foundation.framework in Frameworks */,
+				3C1F603020003FD500EBFBEE /* UIKit.framework in Frameworks */,
+				3C1F602E20003F2C00EBFBEE /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +279,7 @@
 				3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */,
 				3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */,
 				3C0822781FFA88CB005B364F /* FaceDetectionPictureViewController.h */,
-				3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.m */,
+				3C0822791FFA88CB005B364F /* FaceDetectionPictureViewController.mm */,
 				3C08227A1FFA88CB005B364F /* FaceDetectionPictureViewController.xib */,
 				3C08227D1FFA88DC005B364F /* FaceDetectionVideoViewController.h */,
 				3C08227E1FFA88DC005B364F /* FaceDetectionVideoViewController.m */,
@@ -354,6 +366,17 @@
 			name = OCR;
 			sourceTree = "<group>";
 		};
+		3C1F602C20003F2900EBFBEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F603320003FE400EBFBEE /* CoreGraphics.framework */,
+				3C1F603120003FDD00EBFBEE /* Foundation.framework */,
+				3C1F602F20003FD500EBFBEE /* UIKit.framework */,
+				3C1F602D20003F2C00EBFBEE /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C5EF5F61FD592AD00C2DF5F = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +384,7 @@
 				3C5EF61B1FD592AE00C2DF5F /* DemoHighlightsTests */,
 				3C5EF6261FD592AE00C2DF5F /* DemoHighlightsUITests */,
 				3C5EF6001FD592AD00C2DF5F /* Products */,
+				3C1F602C20003F2900EBFBEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -615,7 +639,7 @@
 				3C5EF6751FD598B700C2DF5F /* QKBasicViewController.m in Sources */,
 				3C0822801FFA88DC005B364F /* FaceDetectionVideoViewController.m in Sources */,
 				3C0CEE6C1FFC5DE000980E69 /* DriveLicenseRecognitionViewController.m in Sources */,
-				3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.m in Sources */,
+				3C08227B1FFA88CB005B364F /* FaceDetectionPictureViewController.mm in Sources */,
 				3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */,
 				3C0CEE621FFC5D7800980E69 /* IDCardRecognitionViewController.m in Sources */,
 				3C0822671FF9AB73005B364F /* BaseViewController.m in Sources */,
@@ -777,7 +801,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				DEVELOPMENT_TEAM = 5V5AD6VD9T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoHighlights",
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = DemoHighlights/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -790,7 +821,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				DEVELOPMENT_TEAM = 5V5AD6VD9T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoHighlights",
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = DemoHighlights/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
