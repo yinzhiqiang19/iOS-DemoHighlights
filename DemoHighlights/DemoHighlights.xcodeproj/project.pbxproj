@@ -32,6 +32,7 @@
 		3C1F603020003FD500EBFBEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F602F20003FD500EBFBEE /* UIKit.framework */; };
 		3C1F603220003FDD00EBFBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F603120003FDD00EBFBEE /* Foundation.framework */; };
 		3C1F603420003FE500EBFBEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1F603320003FE400EBFBEE /* CoreGraphics.framework */; };
+		3C24570E2003BDDE00AD6D8A /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3C24570D2003BDDE00AD6D8A /* haarcascade_frontalface_alt.xml */; };
 		3C494D731FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */; };
 		3C494D741FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */; };
 		3C494D781FE50F3300C2AD86 /* PedestrianDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C494D761FE50F3300C2AD86 /* PedestrianDetectionViewController.m */; };
@@ -122,6 +123,7 @@
 		3C1F602F20003FD500EBFBEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C1F603120003FDD00EBFBEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C1F603320003FE400EBFBEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C24570D2003BDDE00AD6D8A /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		3C494D701FE50EC600C2AD86 /* FaceRecognitionHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionHomeViewController.h; sourceTree = "<group>"; };
 		3C494D711FE50EC600C2AD86 /* FaceRecognitionHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionHomeViewController.m; sourceTree = "<group>"; };
 		3C494D721FE50EC600C2AD86 /* FaceRecognitionHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceRecognitionHomeViewController.xib; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 		3C5EF6021FD592AD00C2DF5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C24570D2003BDDE00AD6D8A /* haarcascade_frontalface_alt.xml */,
 				3C5EF60B1FD592AD00C2DF5F /* Main.storyboard */,
 				3C5EF60E1FD592AD00C2DF5F /* Assets.xcassets */,
 				3C5EF6101FD592AD00C2DF5F /* LaunchScreen.storyboard */,
@@ -584,6 +587,7 @@
 				3C0822771FFA40E3005B364F /* SettingViewController.xib in Resources */,
 				3C08227C1FFA88CB005B364F /* FaceDetectionPictureViewController.xib in Resources */,
 				3C494D7E1FE50FC200C2AD86 /* ObjectRecognitionViewController.xib in Resources */,
+				3C24570E2003BDDE00AD6D8A /* haarcascade_frontalface_alt.xml in Resources */,
 				3CEBE76C1FFDAA8E00BCFFEA /* DemoHighlightViewController.xib in Resources */,
 				3C0CEE681FFC5DAE00980E69 /* BankCardRecognitionViewController.xib in Resources */,
 				3C0822811FFA88DC005B364F /* FaceDetectionVideoViewController.xib in Resources */,
