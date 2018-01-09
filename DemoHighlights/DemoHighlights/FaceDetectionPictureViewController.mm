@@ -9,6 +9,7 @@
 #import "FaceDetectionPictureViewController.h"
 #import "opencv2/highgui/ios.h"
 #import <opencv2/highgui/cap_ios.h>
+#import "PublicFunction.h"
 
 #ifdef __cplusplus
 #import <opencv2/opencv.hpp>
@@ -94,10 +95,23 @@ using namespace cv;
     // 销毁控制器
     [picker dismissViewControllerAnimated:YES completion:nil];
     
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    UIImage *resultImage = [self normalizedImage:image];
+    
     // 设置图片
-    self.contentImageView.image = info[UIImagePickerControllerOriginalImage];
-    myFaceImage = info[UIImagePickerControllerOriginalImage];
+    self.contentImageView.image = resultImage;//info[UIImagePickerControllerOriginalImage];
+    myFaceImage = resultImage;//info[UIImagePickerControllerOriginalImage];
     [self detectFace];
+}
+
+- (UIImage *)normalizedImage:(UIImage*)image {
+    if (image.imageOrientation == UIImageOrientationUp) return image;
+    
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    [image drawInRect:(CGRect){0, 0, image.size}];
+    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalizedImage;
 }
 
 - (void)addRightBtn {
@@ -147,6 +161,8 @@ using namespace cv;
 
 -(void)detectFace
 {
+    [PublicFunction printTime:1];
+    
     // Load cascade classifier from the XML file
     NSString* cascadePath = [[NSBundle mainBundle]
                              pathForResource:@"haarcascade_frontalface_alt"
@@ -182,6 +198,23 @@ using namespace cv;
     
     // Show resulting image
     contentImageView.image = MatToUIImage(faceImage);
+    
+    [PublicFunction printTime:2];
+}
+
+-(void)printTime:(NSInteger)startOrEnd
+{
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"YYYY-MM-dd hh:mm:ss SSS"];
+    NSString *timeString = [formatter stringFromDate:date];
+    if (startOrEnd == 1) {
+        NSLog(@"start Time: %@",timeString);
+    }else{
+        NSLog(@"end   Time: %@",timeString);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
