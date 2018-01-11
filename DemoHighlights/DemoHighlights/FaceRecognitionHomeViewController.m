@@ -12,19 +12,23 @@
 #import "FaceTrackingViewController.h"
 #import "FaceRecognitionViewController.h"
 #import "OCRViewController.h"
+#import "MyCollectionViewCell.h"
 
 #define MAINLABEL_TAG 1
 #define SECONDLABEL_TAG 2
 #define PHOTO_TAG 3
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 
-@interface FaceRecognitionHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface FaceRecognitionHomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 {
     NSArray *titleArray;
     NSArray *titleDetailArray;
     NSArray *imageArray;
+    NSInteger cellWidth;
 }
 
-@property (nonatomic,strong) IBOutlet UITableView *myTableView;
+@property (nonatomic,strong) IBOutlet UICollectionView *myCollectionView;
 
 @end
 
@@ -33,73 +37,53 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    cellWidth = 90;
+    [self.myCollectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"MyCollectionViewCell"];
     titleArray = [[NSArray alloc] initWithObjects:@"人脸检测-照片",@"人脸检测-视频",@"人脸跟踪",@"人脸识别",@"OCR", nil];
     titleDetailArray = [[NSArray alloc] initWithObjects:@"从照片中检测出人脸位置，并用矩形框标记",@"从视频中检测出人脸位置，并用矩形框标记",@"实时跟踪人脸位置，并用矩形框标记",@"人脸识别",@"身份证、银行卡、行驶证、驾驶证识别", nil];
     imageArray = [[NSArray alloc] initWithObjects:@"face_detection_icon",@"face_detection_icon",@"face_detection_icon",@"face_detection_icon",@"face_detection_icon", nil];
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 70;
-}
-
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"ImageOnRightCell";
-    UILabel *mainLabel, *secondLabel;
-    UIImageView *photo;
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
-        photo = [[UIImageView alloc] initWithFrame:CGRectMake(10.0, 8.0, 45.0, 45.0)];
-        photo.tag = PHOTO_TAG;
-        [cell.contentView addSubview:photo];
-        
-        mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(65.0, 10.0, 220.0, 15.0)];
-        mainLabel.tag = MAINLABEL_TAG;
-        mainLabel.font = [UIFont systemFontOfSize:15.0];
-        mainLabel.textAlignment = NSTextAlignmentLeft;
-        mainLabel.textColor = [UIColor blackColor];
-        [cell.contentView addSubview:mainLabel];
-        
-        secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(65.0, 30.0, 220.0, 35.0)];
-        secondLabel.tag = SECONDLABEL_TAG;
-        secondLabel.font = [UIFont systemFontOfSize:13.0];
-        secondLabel.textAlignment = NSTextAlignmentLeft;
-        secondLabel.textColor = [UIColor lightGrayColor];
-        secondLabel.numberOfLines = 2;
-        [cell.contentView addSubview:secondLabel];
-    } else {
-        photo = (UIImageView *)[cell.contentView viewWithTag:PHOTO_TAG];
-        mainLabel = (UILabel *)[cell.contentView viewWithTag:MAINLABEL_TAG];
-        secondLabel = (UILabel *)[cell.contentView viewWithTag:SECONDLABEL_TAG];
-    }
-    
-    mainLabel.text = [titleArray objectAtIndex:indexPath.row];
-    secondLabel.text = [titleDetailArray objectAtIndex:indexPath.row];
-//    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg"];
-    
-    photo.image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];//theImage;
-    
-    return cell;
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return titleArray.count;
-}
-
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 5;
+}
+
+//每个UICollectionView展示的内容
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MyCollectionViewCell *cell = (MyCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"MyCollectionViewCell" forIndexPath:indexPath];
+    //加载图片
+    cell.iconImageView.image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];
+    //设置label文字
+    cell.nameLabel.text = [titleArray objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+#pragma mark --UICollectionViewDelegateFlowLayout
+//定义每个UICollectionView 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (cellWidth < 100) {
+        return CGSizeMake(cellWidth, 100);
+    }else{
+        return CGSizeMake(cellWidth, cellWidth);
+    }
+    
+}
+//定义每个UICollectionView 的 margin
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(5, 5, 5, 5);
+}
+#pragma mark --UICollectionViewDelegate
+//UICollectionView被选中时调用的方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
         FaceDetectionPictureViewController *picture = [[FaceDetectionPictureViewController alloc] init];
@@ -122,6 +106,11 @@
         ocr.title = [titleArray objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:ocr animated:YES];
     }
+}
+//返回这个UICollectionView是否可以被选择
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

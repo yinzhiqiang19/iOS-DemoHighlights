@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaceRecognitionHomeViewController">
             <connections>
-                <outlet property="myTableView" destination="f8z-Kp-Xwi" id="yUp-Hd-vUc"/>
+                <outlet property="myCollectionView" destination="TUg-LN-0dd" id="Xdr-r5-7bF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +20,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-Kp-Xwi">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-LN-0dd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lda-FN-nmL">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="fKc-qE-OA4"/>
-                        <outlet property="delegate" destination="-1" id="97i-s4-BAC"/>
+                        <outlet property="dataSource" destination="-1" id="plc-tC-TzU"/>
+                        <outlet property="delegate" destination="-1" id="duF-Mw-dxt"/>
                     </connections>
-                </tableView>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="f8z-Kp-Xwi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4WN-Ps-92f"/>
-                <constraint firstAttribute="trailing" secondItem="f8z-Kp-Xwi" secondAttribute="trailing" id="SaT-mF-H2l"/>
-                <constraint firstAttribute="bottom" secondItem="f8z-Kp-Xwi" secondAttribute="bottom" id="Z3h-CY-jq0"/>
-                <constraint firstItem="f8z-Kp-Xwi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zhd-fw-uvW"/>
+                <constraint firstAttribute="trailing" secondItem="TUg-LN-0dd" secondAttribute="trailing" id="EjQ-78-xsp"/>
+                <constraint firstItem="TUg-LN-0dd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q85-0B-1ff"/>
+                <constraint firstAttribute="bottom" secondItem="TUg-LN-0dd" secondAttribute="bottom" id="iSl-ry-mQN"/>
+                <constraint firstItem="TUg-LN-0dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pD5-AJ-hVY"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="58.5"/>
         </view>

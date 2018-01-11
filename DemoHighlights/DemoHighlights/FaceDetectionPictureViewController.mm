@@ -24,6 +24,7 @@ using namespace cv;
     UIImage *myFaceImage;
 }
 @property (nonatomic, weak) IBOutlet UIImageView* contentImageView;
+@property (nonatomic, weak) IBOutlet UILabel* timeLabel;
 
 @end
 
@@ -199,22 +200,8 @@ using namespace cv;
     // Show resulting image
     contentImageView.image = MatToUIImage(faceImage);
     
-    [PublicFunction printTime:2];
-}
-
--(void)printTime:(NSInteger)startOrEnd
-{
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateStyle:NSDateFormatterMediumStyle];
-    [formatter setTimeStyle:NSDateFormatterShortStyle];
-    [formatter setDateFormat:@"YYYY-MM-dd hh:mm:ss SSS"];
-    NSString *timeString = [formatter stringFromDate:date];
-    if (startOrEnd == 1) {
-        NSLog(@"start Time: %@",timeString);
-    }else{
-        NSLog(@"end   Time: %@",timeString);
-    }
+    NSString *startEndTime = [PublicFunction printTime:2];
+    _timeLabel.text = startEndTime;
 }
 
 - (void)didReceiveMemoryWarning {

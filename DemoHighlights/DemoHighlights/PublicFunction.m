@@ -10,7 +10,7 @@
 
 @implementation PublicFunction
 
-+(void)printTime:(NSInteger)startOrEnd
++(NSString*)printTime:(NSInteger)startOrEnd
 {
     NSDate *date = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -20,9 +20,13 @@
     NSString *timeString = [formatter stringFromDate:date];
     if (startOrEnd == 1) {
         NSLog(@"start Time: %@",timeString);
+        [[NSUserDefaults standardUserDefaults] setObject:timeString forKey:@"StartTimeString"];
     }else{
         NSLog(@"end   Time: %@",timeString);
+        NSString *startString = [[NSUserDefaults standardUserDefaults] objectForKey:@"StartTimeString"];
+        timeString = [NSString stringWithFormat:@"起止时间：\n%@\n%@",startString,timeString];
     }
+    return timeString;
 }
 
 @end

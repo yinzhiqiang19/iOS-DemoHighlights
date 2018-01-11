@@ -10,6 +10,6 @@
 
 @interface PublicFunction : NSObject
 
-+(void)printTime:(NSInteger)startOrEnd;
++(NSString*)printTime:(NSInteger)startOrEnd;
 
 @end
